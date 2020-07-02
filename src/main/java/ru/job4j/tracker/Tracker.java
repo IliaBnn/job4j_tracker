@@ -60,6 +60,9 @@ public class Tracker {
         System.arraycopy(items, index + 1, items, index, ids - index);
         items[ids - 1] = null;
         ids--;
+        for (int i = index; i < ids - 1; i++) {
+            items[i].setId(items[i].getId() - 1);
+        }
         return true;
     }
 
