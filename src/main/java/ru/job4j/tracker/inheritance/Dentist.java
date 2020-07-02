@@ -1,4 +1,4 @@
-package ru.job4j.tracker.other;
+package ru.job4j.tracker.inheritance;
 
 public class Dentist extends Doctor {
 
