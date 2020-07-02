@@ -1,6 +1,6 @@
 package ru.job4j.tracker.inheritance;
 
-public class Doctor {
+public class Doctor extends Profession {
 
     private String hospital;
 
