@@ -8,9 +8,11 @@ public class Dentist extends Doctor {
         return clinic;
     }
 
-    public void removeTooth() {
+    public Tooth removeTooth() {
+        return new Tooth();
     }
 
-    public void makeSeal(){
+    public Seal makeSeal(){
+        return new Seal();
     }
 }

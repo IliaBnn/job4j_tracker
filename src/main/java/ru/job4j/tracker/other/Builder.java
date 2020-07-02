@@ -8,6 +8,7 @@ public class Builder extends Engineer{
         return typeOfBuilder;
     }
 
-    public void makeProject() {
+    public ProjectOfHouse makeProjectOfHouse() {
+        return new ProjectOfHouse();
     }
 }

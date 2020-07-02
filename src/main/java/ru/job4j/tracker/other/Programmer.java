@@ -8,9 +8,11 @@ public class Programmer extends Engineer{
         return position;
     }
 
-    public void makeTests() {
+    public Test makeTests() {
+        return new Test();
     }
 
-    public void makeRefactoring() {
+    public Refactoring makeRefactoring() {
+        return new Refactoring();
     }
 }

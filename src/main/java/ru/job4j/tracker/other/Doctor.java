@@ -8,6 +8,7 @@ public class Doctor {
         return hospital;
     }
 
-    public void heal() {
+    public Diagnos heal() {
+        return new Diagnos();
     }
 }

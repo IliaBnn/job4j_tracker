@@ -8,6 +8,7 @@ public class Engineer extends Profession {
         return company;
     }
 
-    public void create() {
+    public Project create() {
+        return new Project();
     }
 }

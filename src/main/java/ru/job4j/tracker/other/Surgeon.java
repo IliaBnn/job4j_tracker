@@ -8,6 +8,7 @@ public class Surgeon extends Doctor {
         return typeOfSurgeon;
     }
 
-    public void makeSurgery() {
+    public Surgery makeSurgery() {
+        return new Surgery();
     }
 }
