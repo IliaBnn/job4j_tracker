@@ -30,16 +30,13 @@ public class TrackerTest {
     }
 
     @Test
-    public void whenDelete() {
+    public void whenDeleteFromOne() {
         Tracker tracker = new Tracker();
         Item bug = new Item();
         bug.setName("Bug");
-        Item bug2 = new Item();
-        bug2.setName("Bug2");
         tracker.add(bug);
-        tracker.add(bug2);
         int id = bug.getId();
         tracker.delete(id);
-        assertThat(tracker.findById(id).getName(), is("Bug2"));
+        assertThat(tracker.findById(id), is(nullValue()));
     }
 }

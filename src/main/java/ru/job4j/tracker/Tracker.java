@@ -49,18 +49,15 @@ public class Tracker {
         if (index == -1) {
             return false;
         }
-        System.arraycopy(items, index + 1, items, index, ids - index);
-        items[ids - 1] = null;
-        ids--;
-        for (int i = index; i < ids - 1; i++) {
-            items[i].setId(items[i].getId() - 1);
-        }
+        System.arraycopy(items, index + 1, items, index, size - index);
+        items[size - 1] = null;
+        size--;
         return true;
     }
 
     private int indexOf(int id) {
         int rsl = -1;
-        for (int i = 0; i < ids; i++) {
+        for (int i = 0; i < size; i++) {
             if(items[i].getId() == id) {
                 rsl = i;
                 break;
